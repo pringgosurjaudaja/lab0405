@@ -1,0 +1,20 @@
+from CarRentalSystem import RentalSystem
+from customer import Customer
+from Car import *
+new_system = RentalSystem(100,1)
+customer1 = Customer("Bob",23,12345,"bob@example.com",5, "Kingsford", "Mascot")
+car1=Car("B1234", 2005, "A1", "Audi", "Small")
+new_system.bookCar(car1, customer1)
+print(new_system)
+customer2 = Customer("Michael",33,432425,"michael@example.com",6, "Pagewood", "Eastlakes")
+car2=Car("D9923", 2007, "Corolla", "Toyota", "Medium")
+new_system.bookCar(car2, customer2)
+print(new_system)
+customer3 = Customer("Kevin",43,498725,"kevin@example.com",9, "Maroubra", "Coogee")
+car3=Car("F4535", 2012, "Tahoe", "Chevrolet", "Large")
+new_system.bookCar(car3, customer3)
+print(new_system)
+customer4 = Customer("Mark",40,652424,"mark@example.com",9, "Eastgardens", "La Perouse")
+car4=Car("J3235", 2017, "F-Type", "Jaguar", "Premium")
+new_system.bookCar(car4, customer4)
+print(new_system)
